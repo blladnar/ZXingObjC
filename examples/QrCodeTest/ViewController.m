@@ -15,6 +15,7 @@
  */
 
 #import "ViewController.h"
+#import "ZXView.h"
 
 @implementation ViewController
 
@@ -23,7 +24,7 @@
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
 
-  self.textView.text = @"http://github.com/TheLevelUp/ZXingObjC";
+  self.textView.text = @"12345678901";
   [self updatePressed:nil];
 }
 
@@ -37,13 +38,19 @@
 
   ZXMultiFormatWriter *writer = [[ZXMultiFormatWriter alloc] init];
   ZXBitMatrix *result = [writer encode:data
-                                format:kBarcodeFormatQRCode
+                                format:kBarcodeFormatUPCA
                                  width:self.imageView.frame.size.width
-                                height:self.imageView.frame.size.width
+                                height:self.imageView.frame.size.height
                                  error:nil];
+    
+    ZXView *barcodeView = [[ZXView alloc] initWithFrame:self.barView.frame bitMatrix:result];
+    
+    [self.view addSubview:barcodeView];
+    
 
   if (result) {
     ZXImage *image = [ZXImage imageWithMatrix:result];
+      
     self.imageView.image = [UIImage imageWithCGImage:image.cgimage];
   } else {
     self.imageView.image = nil;

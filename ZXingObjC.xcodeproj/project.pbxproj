@@ -1648,6 +1648,9 @@
 		25FE5D4016D0B84C00826CDB /* ZXRSSExpandedStackedInternalTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FE5D3F16D0B84C00826CDB /* ZXRSSExpandedStackedInternalTestCase.m */; };
 		25FE5D4316D0B8B200826CDB /* ZXTestCaseUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FE5D4216D0B8B200826CDB /* ZXTestCaseUtil.m */; };
 		25FE5D4516D1997C00826CDB /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 25FE5D4416D1997C00826CDB /* Resources */; };
+		BBABD7F61A82CA9A00324E1F /* ZXView.h in Headers */ = {isa = PBXBuildFile; fileRef = BBABD7F41A82CA9A00324E1F /* ZXView.h */; };
+		BBABD7F71A82CA9A00324E1F /* ZXView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBABD7F51A82CA9A00324E1F /* ZXView.m */; };
+		BBABD7F81A82CA9A00324E1F /* ZXView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBABD7F51A82CA9A00324E1F /* ZXView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2386,6 +2389,8 @@
 		25FE5D4116D0B8B100826CDB /* ZXTestCaseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTestCaseUtil.h; sourceTree = "<group>"; };
 		25FE5D4216D0B8B200826CDB /* ZXTestCaseUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTestCaseUtil.m; sourceTree = "<group>"; };
 		25FE5D4416D1997C00826CDB /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		BBABD7F41A82CA9A00324E1F /* ZXView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXView.h; sourceTree = "<group>"; };
+		BBABD7F51A82CA9A00324E1F /* ZXView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2700,6 +2705,8 @@
 				25403D4C166A9A0800E13304 /* ZXCGImageLuminanceSource.m */,
 				25403D4D166A9A0800E13304 /* ZXImage.h */,
 				25403D4E166A9A0800E13304 /* ZXImage.m */,
+				BBABD7F41A82CA9A00324E1F /* ZXView.h */,
+				BBABD7F51A82CA9A00324E1F /* ZXView.m */,
 			);
 			name = client;
 			path = ZXingObjC/client;
@@ -3813,6 +3820,7 @@
 				0210FC2218E0AA6300B1F4CE /* ZXQRCodeMaskUtil.h in Headers */,
 				0210FBA418E0A7BE00B1F4CE /* ZXDataMatrixBase256Encoder.h in Headers */,
 				0210FBBB18E0A89000B1F4CE /* ZXGenericMultipleBarcodeReader.h in Headers */,
+				BBABD7F61A82CA9A00324E1F /* ZXView.h in Headers */,
 				0210FBD718E0A90700B1F4CE /* ZXRSSFinderPattern.h in Headers */,
 				0210FC1818E0AA1700B1F4CE /* ZXQRCodeAlignmentPattern.h in Headers */,
 				024D310F19104B77008C0C89 /* ZXByteMatrix.h in Headers */,
@@ -4574,6 +4582,7 @@
 				0218B86018D232340005E7EC /* ZXAztecSimpleToken.m in Sources */,
 				25403D61166A9A0800E13304 /* ZXEmailAddressResultParser.m in Sources */,
 				0294D11A190ED90B00BBACCB /* ZXEncodeHints.m in Sources */,
+				BBABD7F71A82CA9A00324E1F /* ZXView.m in Sources */,
 				0294D165190EDAA300BBACCB /* ZXMultiDetector.m in Sources */,
 				25403D63166A9A0800E13304 /* ZXEmailDoCoMoResultParser.m in Sources */,
 				0294D120190ED90B00BBACCB /* ZXErrors.m in Sources */,
@@ -4888,6 +4897,7 @@
 				25404135166AA0F100E13304 /* ZXQRCodeDecodedBitStreamParserTestCase.m in Sources */,
 				25404136166AA0F100E13304 /* ZXQRCodeVersionTestCase.m in Sources */,
 				25404137166AA0F100E13304 /* ZXBitVectorTestCase.m in Sources */,
+				BBABD7F81A82CA9A00324E1F /* ZXView.m in Sources */,
 				25404138166AA0F100E13304 /* ZXQRCodeEncoderTestCase.m in Sources */,
 				25404139166AA0F100E13304 /* ZXQRCodeMaskUtilTestCase.m in Sources */,
 				2540413A166AA0F100E13304 /* ZXQRCodeMatrixUtilTestCase.m in Sources */,

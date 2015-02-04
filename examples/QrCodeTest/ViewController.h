@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) IBOutlet UITextView *textView;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIView *barView;
 
 - (IBAction)updatePressed:(id)sender;
 
