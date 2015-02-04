@@ -47,7 +47,18 @@
     
     [self.view addSubview:barcodeView];
     
+    int x = 0;
+    for(UIView *line in barcodeView.lines) {
+        CGRect frame2 = line.frame;
+        frame2.origin.x = arc4random_uniform(barcodeView.frame.size.width);
 
+        [UIView animateWithDuration:2.0 delay:0.0 options:UIViewKeyframeAnimationOptionAutoreverse | UIViewKeyframeAnimationOptionRepeat animations:^{
+            line.frame = frame2;
+        } completion:nil];
+        x++;
+    }
+    
+    
   if (result) {
     ZXImage *image = [ZXImage imageWithMatrix:result];
       

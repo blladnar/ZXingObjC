@@ -13,5 +13,5 @@
 @interface ZXView : UIView
 - (instancetype)initWithFrame:(CGRect)frame bitMatrix:(ZXBitMatrix*)bitMatrix;
 
-@property (nonatomic, readonly) NSMutableArray *lines;
+@property (nonatomic, readonly) NSArray *lines;
 @end
